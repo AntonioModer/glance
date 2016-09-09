@@ -25,7 +25,7 @@ Documentation
 
 - `layer = glance.layer(width, height)` - Creates a new layer with the specified `width` and
   `height`.  If the dimensions are not specified, the dimensions of the window are used.
-- `layer.render(fn, ...)` - Renders to the layer using a function, only updating the canvas if
+- `layer:render(fn, ...)` - Renders to the layer using a function, only updating the canvas if
   necessary.  The canvas is then drawn to the screen, with any remaining arguments passed to
   `love.graphics.draw`.
 - `glance.render(fn, ...)` - Renders to a default layer without having to explicitly create one.
